@@ -53,10 +53,23 @@ def parse_args():
 
 
 def load_core(path: Path):
-    spec = importlib.util.spec_from_file_location("sei_v5_1_core", path)
+    module_name = "sei_v5_1_core"
+    spec = importlib.util.spec_from_file_location(module_name, path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Could not load core module from {path}")
+
     mod = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
-    spec.loader.exec_module(mod)
+
+    # Required for dataclasses and other code that inspect sys.modules
+    sys.modules[module_name] = mod
+
+    try:
+        spec.loader.exec_module(mod)
+    except Exception:
+        # Avoid leaving a partially initialized module behind
+        sys.modules.pop(module_name, None)
+        raise
+
     return mod
 
 
