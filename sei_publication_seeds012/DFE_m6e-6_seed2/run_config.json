@@ -1,0 +1,59 @@
+{
+  "config": {
+    "adam_iters_per_window": 1400,
+    "adam_lr": 0.0015,
+    "lbfgs_iters_per_window": 600,
+    "lbfgs_lr": 0.5,
+    "lbfgs_history": 50,
+    "n_uniform": 650,
+    "n_chebyshev": 350,
+    "resample_every": 200,
+    "hidden_width": 64,
+    "hidden_layers": 4,
+    "transformed_scale_s": 0.06,
+    "transformed_scale_e": 0.161,
+    "transformed_scale_i": 0.15000000000000002,
+    "endpoint_physics_weight": 1.0,
+    "bound_weight": 1.0,
+    "l2_weight": 1e-12,
+    "grad_clip": 10.0,
+    "latent_scale_s": 10.0,
+    "latent_scale_e": 8.0,
+    "latent_scale_i": 8.0,
+    "growth_efolds_first_window": 1.5,
+    "window_growth": 1.4,
+    "max_window_width": 3000.0,
+    "n_plot_per_window": 501,
+    "dtype": "float64"
+  },
+  "args": {
+    "output_dir": "/kaggle/working/NSSR-Project/SEI_Model/sei_publication_seeds012/DFE_m6e-6_seed2",
+    "seed": 2,
+    "regime": "DFE",
+    "media": "6e-6",
+    "device": "cpu",
+    "adam_iters_per_window": null,
+    "lbfgs_iters_per_window": null,
+    "quick": false,
+    "max_windows": null
+  },
+  "window_edges": [
+    0.0,
+    250.0,
+    600.0,
+    1090.0,
+    1776.0,
+    2736.3999999999996,
+    4080.959999999999,
+    5963.343999999998,
+    8598.681599999996,
+    11598.681599999996,
+    14598.681599999996,
+    17598.681599999996,
+    20000.0
+  ],
+  "dfe_infected_eigenvalues": [
+    "-0.2328192932642391",
+    "-0.01718070673576088"
+  ]
+}

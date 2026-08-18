@@ -1,0 +1,34 @@
+device=cpu; regime=EE; d=0.001; R0=1.188119; m=1e-6
+model-derived window edges: 0.0, 250.0, 600.0, 1090.0, 1776.0, 2736.4, 4081.0, 5963.3, 8598.7, 11598.7, 14598.7, 17598.7, 20000.0
+window 1/12: [0.0, 250.0], init=(4999700.0,200.0,100.0)
+  physics=2.237e-05; abs RMS residuals=(0.46, 0.0924, 0.137); end=(4993814.0,472.7,844.3)
+window 2/12: [250.0, 600.0], init=(4993814.0,472.7,844.3)
+  physics=1.001e-07; abs RMS residuals=(0.179, 0.0311, 0.0462); end=(4944140.0,3538.9,6385.2)
+window 3/12: [600.0, 1090.0], init=(4944140.0,3538.9,6385.2)
+  physics=7.027e-08; abs RMS residuals=(1.24, 0.304, 0.416); end=(4480087.0,19061.4,37429.9)
+window 4/12: [1090.0, 1776.0], init=(4480087.0,19061.4,37429.9)
+  physics=5.775e-08; abs RMS residuals=(7, 0.247, 0.6); end=(4019001.5,6811.0,14187.0)
+window 5/12: [1776.0, 2736.4], init=(4019001.5,6811.0,14187.0)
+  physics=3.158e-08; abs RMS residuals=(3.33, 0.0692, 0.176); end=(4299589.5,3542.7,7019.0)
+window 6/12: [2736.4, 4081.0], init=(4299589.5,3542.7,7019.0)
+  physics=1.515e-07; abs RMS residuals=(11.9, 0.0956, 0.301); end=(4264045.9,7773.8,15570.1)
+window 7/12: [4081.0, 5963.3], init=(4264045.9,7773.8,15570.1)
+  physics=1.571e-07; abs RMS residuals=(11.7, 0.154, 0.43); end=(4269362.3,5946.5,11873.1)
+window 8/12: [5963.3, 8598.7], init=(4269362.3,5946.5,11873.1)
+  physics=9.462e-08; abs RMS residuals=(7.38, 0.119, 0.37); end=(4260328.5,6328.4,12660.4)
+window 9/12: [8598.7, 11598.7], init=(4260328.5,6328.4,12660.4)
+  physics=1.695e-08; abs RMS residuals=(3.92, 0.0507, 0.115); end=(4260038.4,6246.4,12495.0)
+window 10/12: [11598.7, 14598.7], init=(4260038.4,6246.4,12495.0)
+  physics=1.300e-09; abs RMS residuals=(0.585, 0.0265, 0.0357); end=(4261691.5,6231.9,12462.6)
+window 11/12: [14598.7, 17598.7], init=(4261691.5,6231.9,12462.6)
+  physics=1.220e-09; abs RMS residuals=(0.279, 0.0283, 0.036); end=(4261127.4,6236.7,12473.5)
+window 12/12: [17598.7, 20000.0], init=(4261127.4,6236.7,12473.5)
+  physics=3.880e-10; abs RMS residuals=(0.23, 0.0166, 0.0164); end=(4261087.5,6234.8,12469.6)
+training complete; starting independent RK4 validation
+validation metrics:
+  S: relL2=6.7124e-04, R2=0.999906, NRMSE=3.0106e-03, maxAE=1.191e+04
+  E: relL2=1.0793e-02, R2=0.999604, NRMSE=4.1233e-03, maxAE=323.3
+  I: relL2=1.0989e-02, R2=0.999593, NRMSE=4.1721e-03, maxAE=653.5
+analytic equilibrium (diagnostic only): [4261135.21949563    6234.46086862   12468.92173724]
+PINN endpoint: [4261087.53386551    6234.76803163   12469.58690164] relative endpoint-equilibrium error: [-1.11908277e-05  4.92685772e-05  5.33457838e-05]
+saved outputs to /kaggle/working/NSSR-Project/SEI_Model/sei_publication_seeds012/EE_m1e-6_seed0

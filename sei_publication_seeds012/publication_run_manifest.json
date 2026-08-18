@@ -1,0 +1,19 @@
+{
+  "frozen_core_script": "/Users/Zia/users/zia/downloads/NSSR-Project/SEI_Model/sei_windowed_physics_only_pinn_v5_1.py",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "regimes": [
+    "DFE",
+    "EE"
+  ],
+  "media": [
+    "0",
+    "1e-6",
+    "6e-6"
+  ],
+  "device": "cpu",
+  "note": "PINN v5.1 frozen before multi-seed publication runs; RK4 is validation only."
+}
